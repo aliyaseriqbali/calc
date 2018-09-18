@@ -44,3 +44,15 @@ describe('Calculate average age Test', () => {
         assert.equal(operations.calcAverage([20, 30, 10]), 20);
     });
 });
+
+describe('Calculate age Test', () => {
+    it('Calculates the age', () => {
+        assert.equal(operations.calculateAge(1994), 24);
+    });
+});
+
+describe('Calculate tip Test', () => {
+    it('Calculates the tip', () => {
+        assert.equal(operations.countTip(268), 26.8);
+    });
+});

@@ -22,6 +22,20 @@ function calcAverage(ages) {
     return sum / ages.length;
 }
 
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
 
+function countTip(bill) {
+    var percentage;
+    if (bill < 50) {
+        percentage = .20;
+    } else if (bill >= 50 && bill < 200) {
+        percentage = .15;
+    } else {
+        percentage = .10;
+    }
+    return percentage * bill;
+}
 
-module.exports = { add, subtract, multiply, divide, validateNumbers, first, calcAverage }
+module.exports = { add, subtract, multiply, divide, validateNumbers, first, calcAverage, calculateAge, countTip }
