@@ -1,4 +1,4 @@
-const operations = require('./operation.js')
+const operations = require('./operation.js');
 const assert = require('assert');
 
 it('correctly calculates the sum of 1 and 3', () => {
@@ -31,4 +31,16 @@ it('indicates failure when a string is used instead of a number', () => {
 
 it('indicates failure when a string is used instead of a number', () => {
     assert.equal(operations.validateNumbers(5, 5), true);
+});
+/*-------------------------------------------------------------------------------------*/
+describe('First Test', () => {
+    it('it should return hellow world', () => {
+        assert.equal(operations.first(), 'hello world')
+    });
+});
+
+describe('Calculate average age Test', () => {
+    it('Should calculate the average of ages', () => {
+        assert.equal(operations.calcAverage([20, 30, 10]), 20);
+    });
 });
